@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Card, Col,} from 'antd';
+import {Card, Col, Divider,} from 'antd';
 import moment from 'moment';
 import {elementList, getElementData} from "./constant/commonList";
 import DefaultMenu from './components/DefaultMenu';
@@ -79,15 +79,18 @@ const seriesData = [
 const thead = ['', '西宁市共和路站', '西宁南山路站', '格尔木昆仑路站', '玉树通天河站', '某辐射站', '瓦里关站'];
 let tbody = [];
 for (let i = 0; i < 30; i++) {
-    tbody.push([i + 1, _.random(0, 40), _.random(0, 40), _.random(0, 40), _.random(0, 40), _.random(0, 40), _.random(0, 40), _.random(0, 40), _.random(0, 40),]);
+    tbody.push([i + 1, _.random(0, 40), _.random(0, 40), _.random(0, 40), _.random(0, 40), _.random(0, 40), _.random(0, 40),]);
 }
 
 let stationMap;
 
+function changeChosenDate(item) {
+
+}
+
 /**
  * 组件示例数据
  */
-
 
 
 /**
@@ -187,6 +190,7 @@ const componentList = [
     },
     {title: "简单表格", component: <SimpleTable thead={thead} tbody={tbody} showSort={true}/>,},
     {title: "要素展示", component: <LabelButton name={"PM₂.₅"} width={70} value={'-'}/>,},
+
 
 ];
 

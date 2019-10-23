@@ -1,7 +1,3 @@
-/**
- * 2019-02-25
- * author: 李坤
- */
 import React from "react";
 import PropTypes from "prop-types";
 import "./Bar.css";
