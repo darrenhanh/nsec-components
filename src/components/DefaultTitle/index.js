@@ -1,24 +1,33 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import './style.less';
 
-/**
- * 标题
- * @param props
- * @returns {*}
- * @constructor
- */
 export default function DefaultTitle(props) {
+  const style = {
+    fontSize: 16,
+    fontWeight: 600,
+    paddingTop: 20,
+    paddingBottom: 20,
+    textAlign: 'center',
+  };
+  if (props.textAlign) {
+    style.textAlign = props.textAlign;
+  }
+  if (props.padding || props.padding === 0) {
+    style.padding = props.padding;
+  }
 
   return (
-    <div className={"defaultTitle"}>
-      <div className={"middleButton"}>
-        <span style={{marginRight: 15}}>{props.title}</span>
-      </div>
+    <div style={style}>
+      <span>
+        {props.title}
+      </span>
+      {props.children}
     </div>
   )
 }
 
 DefaultTitle.propTypes = {
   title: PropTypes.string.isRequired,
+  textAlign: PropTypes.string,
+  padding: PropTypes.number,
 };

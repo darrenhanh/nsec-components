@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {geteleColor} from '@/common/eleColorEx'
+import {geteleColor} from '../../common/eleColorEx'
 import './style.less';
 
 export default class LabelButton extends Component {

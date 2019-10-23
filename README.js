@@ -1,35 +1,4 @@
-import React, {useState} from 'react';
-import {Card, Col,} from 'antd';
-import moment from 'moment';
-import {elementList, getElementData} from "./constant/commonList";
-import DefaultMenu from './components/DefaultMenu';
-import TimeLine from './components/TimeLine';
-import FloatTitle from './components/FloatTitle';
-import SimpleLineChart from './components/SimpleLineChart';
-import DefaultTitle from './components/DefaultTitle';
-import SelectOption from "./components/SelectOption";
-import SwitchButton from "./components/SwitchButton";
-import BackgroundHeader from "./components/BackgroundHeader";
-import MultiLineChart from "./components/MultiLineChart";
-import FloatContent from "./components/FloatContent";
-import SimpleBarChart from "./components/SimpleBarChart";
-import {createRandomList} from "./common/dispatch";
-import ImgContent from "./components/ImgContent";
-import SimpleGauge from './components/SimpleGauge';
-import TabsSelect from './components/TabsSelect';
-import {Test} from './components/Test';
-import {PaddingSpan} from "./components/PaddingSpan";
-import LastTimeLine from './components/LastTimeLine';
-import GisContent from './components/GisContent';
-import SimpleTable from './components/SimpleTable';
-import LabelButton from './components/LabelButton';
 
-import SimpleRangePicker from './components/SimpleRangePicker';
-import DIYCalendar from './components/DIYCalendar/DIYCalendar';
-import YearCalendar from './components/YearCalendar';
-
-const width = document.body.clientWidth;
-const height = document.body.clientHeight;
 
 
 /**
@@ -87,8 +56,6 @@ let stationMap;
 /**
  * 组件示例数据
  */
-
-
 
 /**
  * 组件列表
@@ -190,32 +157,6 @@ const componentList = [
 
 ];
 
-/**
- * 组件卡片
- * @constructor
- */
-function ComponentCard(props) {
-    return (
-        <Card title={props.title} style={{width: width - 50, margin: 20,}}>
-            {props.component}
-        </Card>
-    );
-}
-
-/**
- * 组件示例及效果页
- */
-export default function Components() {
-    return (
-        <div>
-            {
-                componentList && componentList.length > 0 && componentList.map((component) => {
-                    return <ComponentCard {...component}/>
-                })
-            }
-        </div>
-    )
-}
 
 
 
