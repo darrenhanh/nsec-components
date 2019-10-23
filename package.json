@@ -1,6 +1,6 @@
 {
   "name": "nsec-components",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "description": "",
   "main": "dist/bundle.js",
   "repository": {
@@ -21,6 +21,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --env.NODE_ENV=production",
+    "prepublish": "npm run build",
     "start": "webpack-dev-server"
   },
   "dependencies": {
