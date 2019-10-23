@@ -3,6 +3,14 @@
   "version": "0.0.5",
   "description": "",
   "main": "dist/bundle.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darrenhanh/nsec-components.git"
+  },
+  "bugs": {
+    "url": "https://github.com/darrenhanh/nsec-components/issues"
+  },
+  "homepage": "https://github.com/darrenhanh/nsec-components#readme",
   "files": [
     "dist"
   ],
